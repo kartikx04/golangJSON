@@ -8,7 +8,7 @@ import (
 
 func main() {
 	if err := write("readme.txt", "Hi there, welcome to golang project!"); err != nil {
-		log.Fatal(err)
+		log.Fatal("failed to create file")
 	}
 }
 
