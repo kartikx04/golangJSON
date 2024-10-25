@@ -1,1 +1,1 @@
-Hi there, welcome to golang project
+Hi there, welcome to golang project!
