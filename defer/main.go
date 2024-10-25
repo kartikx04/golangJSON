@@ -49,7 +49,7 @@ func copyFile(source, destination string) error {
 		return err
 	}
 
-	fmt.Printf("copied %d bytes from %s to %s.", n, source, destination)
+	fmt.Printf("copied %d bytes from %s to %s.\n", n, source, destination)
 
 	if err := src.Close(); err != nil {
 		return err
