@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"context"
+	"fmt"
+)
+
+func doSomething(ctx context.Context) {
+	fmt.Printf("We changed Key value to %s.\n", ctx.Value("Key"))
+}
 
 func main() {
-	fmt.Println("Project Initialized")
+	ctx := context.TODO()
+
+	ctx = context.WithValue(ctx, "Key", "KeyValue")
+	doSomething(ctx)
 }
